@@ -1,0 +1,16 @@
+.product {
+  &__photo {
+    width: 100%;
+
+    display: block;
+    transition: transform $effectDuration;
+  }
+
+  &__photo-link {
+    display: block;
+
+    &:hover .product__photo {
+      transform: scale($scale);
+    }
+  }
+}
