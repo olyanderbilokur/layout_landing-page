@@ -1,16 +1,12 @@
 .top-bar {
-  padding-block: 24px; /* горизонтальні падінги */
+  padding-block: 28px;
 
   display: flex; /* щоб блочні елементи були врядок, а не в стовпчик */
   justify-content: space-between; /* елементи з різних сторін рядка */
   align-items: center; /* щоб елементи були відцентровані по вертикалі */
 
   @include on-tablet {
-    padding-block: 32px;
-  }
-
-  @include on-desktop {
-    padding-block: 120px;
+    padding-block: 36px;
   }
 
   &__icons {
@@ -30,5 +26,37 @@
     @include on-tablet {
       height: 24px;
     }
+  }
+
+  &__phone {
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: all $effectDuration;
+
+    @include on-desktop {
+      &:hover .top-bar__phone-number {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  }
+
+  &__phone-number {
+    position: absolute;
+    opacity: 0;
+    right: 40px; // 32 + 8
+    white-space: nowrap;
+    height: 16px;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-align: right;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    transform: translateX(8px);
   }
 }

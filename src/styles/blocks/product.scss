@@ -3,14 +3,11 @@
     width: 100%;
 
     display: block;
-    transition: transform $effectDuration;
   }
 
   &__photo-link {
     display: block;
 
-    &:hover .product__photo {
-      transform: scale($scale);
-    }
+    @include hover(transform, scale($scale));
   }
 }

@@ -32,6 +32,7 @@
   transition: #{$property} $effectDuration;
   &:hover {
     #{$property}: $toValue;
+    cursor: url('../images/vector.png'), pointer;
   }
 }
 

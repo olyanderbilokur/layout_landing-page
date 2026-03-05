@@ -24,10 +24,6 @@
 
   &--phone {
     background-image: url(../images/icons/icon-phone-number.svg);
-
-    &:hover {
-      cursor: url('../images/vector.png'), pointer;
-    }
   }
 
   &--menu {
@@ -35,15 +31,10 @@
 
     &:hover {
       background-image: url(../images/icons/icon-burger-menu-hover.svg);
-      cursor: url('../images/vector.png'), pointer;
     }
   }
 
   &--close {
     background-image: url(../images/icons/icon-close.svg);
-
-    &:hover {
-      cursor: url('../images/vector.png'), pointer;
-    }
   }
 }

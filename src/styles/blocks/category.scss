@@ -30,14 +30,17 @@
 
     &:hover .category__photo {
       transform: scale($scale);
+      cursor: url('../images/vector.png'), pointer;
     }
   }
 
   &__title {
     font-weight: 700;
     font-style: Bold;
-    font-size: 16px;
+    font-size: 24px;
     line-height: 140%;
     letter-spacing: 0;
+    margin-bottom: 56px;
+    margin-top: 16px;
   }
 }

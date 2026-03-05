@@ -49,7 +49,8 @@
     }
 
     &--textarea {
-      height: 148px;
+      min-height: 148px;
+      resize: none;
     }
   }
 
@@ -70,10 +71,6 @@
     line-height: 27px;
     letter-spacing: 0;
     text-align: center;
-
-    &:hover {
-      cursor: url('../images/vector.png'), pointer;
-    }
 
     @include hover(background-color, #1b2129);
     @include active(background-color, #010810);
@@ -115,6 +112,7 @@
     &:hover {
       text-decoration: underline;
       color: #f98921;
+      cursor: url('../images/vector.png'), pointer;
     }
   }
 }

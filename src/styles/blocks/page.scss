@@ -5,14 +5,16 @@
   font-size: 16px;
   line-height: 140%;
 
-  scroll-behavior: smooth; /* скрол відбувається плавно */
+  // scroll-behavior: smooth; /* скрол відбувається плавно */
 
   &:has(.page__menu:target) {
     overflow: hidden; /* not to scroll the page */
   }
 
+  // justify-items: center;
   &__body {
     margin: 0;
+
     min-width: 320px; /* щоб на дуже малих екранах сторінка масшттабувалася */
   }
 

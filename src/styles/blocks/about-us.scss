@@ -1,4 +1,13 @@
 .about-us {
+  background-color: #fcfaef;
+  padding-bottom: 48px;
+  margin-bottom: 64px;
+
+  @include on-tablet {
+    padding-bottom: 120px;
+    margin-bottom: 120px;
+  }
+
   &__grid {
     @include page-grid;
   }
@@ -6,12 +15,21 @@
   &__title {
     grid-column: 1 / -1;
 
+    margin: 0;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    text-align: left;
+    letter-spacing: 0;
+
     @include on-tablet {
       grid-column: 1 / 4;
+      font-size: 40px;
     }
 
     @include on-desktop {
       grid-column: span 6;
+      font-size: 48px;
     }
   }
 
