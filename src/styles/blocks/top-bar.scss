@@ -56,6 +56,9 @@
     text-align: right;
     vertical-align: middle;
     text-transform: uppercase;
+    text-decoration: none;
+
+    color: $main-text-color;
 
     transform: translateX(8px);
   }
